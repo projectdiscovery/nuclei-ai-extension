@@ -1,11 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "HackerOne Report Extension",
-    "version": "1.0",
-    "content_scripts": [
-      {
-        "matches": ["https://hackerone.com/reports/*"],
-        "js": ["content.js"]
-      }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "HackerOne Nuclei Template Generator Button",
+  "version": "1.0",
+  "author": "parth@projectdiscovery.io",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"],
+  "action": {
+    "default_icon": {
+      "16": "nuclei.png",
+      "32": "nuclei.png",
+      "48": "nuclei.png",
+      "128": "nuclei.png"
+    }
+},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://hackerone.com/reports/*",
+        "https://hackerone.com/bugs?subject=*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
