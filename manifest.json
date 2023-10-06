@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Nuclei AI - Template Generator",
+  "version": "1.0",
+  "author": "parth@projectdiscovery.io",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "activeTab"
+  ],
+  "icons": {
+    "16": "icons/nuclei_logo.png",
+    "32": "icons/nuclei_logo.png",
+    "48": "icons/nuclei_logo.png",
+    "128": "icons/nuclei_logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://hackerone.com/reports/*",
+        "https://hackerone.com/bugs?subject=*",
+        "https://exploit-db.com/exploits/*"
+      ],
+      "js": [
+        "js/gsap.min.js", "js/chroma.min.js", "content.js"
+      ]
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
