@@ -26,7 +26,7 @@ To manually install the Nuclei AI Browser Extension, follow these steps:
 
 After following these steps, the Nuclei AI Browser Extension will be successfully installed in your Chrome browser.
 
-<img width="500" alt="image" src="https://github.com/projectdiscovery/Nuclei-AI-Extension/assets/8293321/398ee02b-08e3-4585-b0ad-04e9cc7f9500">
+<img width="500" alt="image" src="static/extension.png">
 
 ### Chrome Web Store
 
@@ -46,7 +46,7 @@ To generate nuclei templates from selected text on any website using the context
 
 By following these steps, you can easily generate Nuclei Templates from any webpage with selected text.
 
-<img width="500" alt="image" src="https://github.com/projectdiscovery/Nuclei-AI-Extension/assets/8293321/a7c98574-8eff-4c49-80f5-dd7c05254ffb">
+<img width="500" alt="image" src="static/twitter.png">
 
 ### HackerOne Report:
 
@@ -60,7 +60,7 @@ To generate nuclei templates on HackerOne platform:
 6. A Nuclei Template will be generated based on the selected report.
 7. You can validate or test the generated Nuclei Template right away.
 
-<img width="400" alt="image" src="https://github.com/projectdiscovery/Nuclei-AI-Extension/assets/8293321/e0951dea-f21b-4d7c-9a35-1fa9d36ed082">
+<img width="400" alt="image" src="static/hackerone.png">
 
 ### Keyboard Shortcut:
 
