@@ -633,7 +633,7 @@ if (window.location.hostname === "hackerone.com") {
 }    
     
 if (window.location.hostname === "www.exploit-db.com") {    
-  console.log('preloading on hackerone.com');    
+  console.log('preloading on exploit-db.com');    
   preloadIframe();    
 }    
     
