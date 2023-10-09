@@ -1,10 +1,10 @@
 # Nuclei AI - Browser Extension
 
-Nuclei AI Browser Extension, built on top of [templates.nuclei.sh](https://templates.nuclei.sh), simplifies the creation of vulnerability templates, by enabling users to extract vulnerability information from any webpages to quickly and efficiently create nuclei templates, saving valuable time and effort.
+Nuclei AI Browser Extension, built on top of [cloud.projectdiscovery.io](https://cloud.projectdiscovery.io/templates), simplifies the creation of vulnerability templates, by enabling users to extract vulnerability information from any webpages to quickly and efficiently create nuclei templates, saving valuable time and effort.
 
 ## Prerequisite
 
-A logged-in account on [templates.nuclei.sh](https://templates.nuclei.sh) is required to use this extension. You can sign up or log in before using Nuclei AI's features.
+A logged-in account on [cloud.projectdiscovery.io](https://cloud.projectdiscovery.io) is required to use this extension. You can sign up or log in before using Nuclei AI's features.
 
 ## Features
 
@@ -77,4 +77,4 @@ File issues or provide feedback via our [GitHub issue tracker](#).
 
 ## License
 
-Licensed under the [MIT License](#). See [LICENSE.md](./LICENSE.md) for more details.
+Licensed under the MIT License. See [LICENSE.md](./LICENSE.md) for more details.
