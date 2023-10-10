@@ -250,7 +250,7 @@ function insertIframe(preload = false) {
     
     const iframe = document.createElement('iframe');    
     iframe.id = "nuclei_iframe";    
-    iframe.src = "https://templates.nuclei.sh/";    
+    iframe.src = "https://cloud.projectdiscovery.io/templates";    
     iframe.style.width = "40%";    
     iframe.style.height = "100%";    
     iframe.style.position = "fixed";    
@@ -615,7 +615,7 @@ function generateButton() {
     };    
     iframex = document.getElementById("nuclei_iframe");    
     if (iframex && iframex.contentWindow) {    
-        iframex.contentWindow.postMessage(messageData, 'https://templates.nuclei.sh/');    
+        iframex.contentWindow.postMessage(messageData, 'https://cloud.projectdiscovery.io/templates');    
     } else {    
         console.error("Error: iframe or its contentWindow is not available.");    
     }    
