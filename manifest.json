@@ -27,6 +27,7 @@
       ]
     }
   ],
+  "action": {},
   "content_scripts": [
     {
       "matches": [
