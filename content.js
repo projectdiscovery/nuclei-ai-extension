@@ -661,17 +661,20 @@ function sendSelectedTextToNuclei(selectedText) {
     }    
 }    
     
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {      
-  if (request.message === 'TabUpdated') {      
-    if (window.location.hostname === "hackerone.com") {      
-      generateButton();      
-    } else if (window.location.hostname === "www.exploit-db.com") {    
-      generateButtonExploitDB();    
-      }    
-      } else if (request.message === 'GenerateNucleiTemplate') {    
-      sendSelectedTextToNuclei(request.selectedText + '\n' + 'Also add the following reference to the nuclei template: ' + window.location.href);    
-      }    
-      });    
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {  
+    if (request.message === 'TabUpdated') {  
+      if (window.location.hostname === "hackerone.com") {  
+        generateButton();  
+      } else if (window.location.hostname === "www.exploit-db.com") {  
+        generateButtonExploitDB();  
+      }  
+    } else if (request.message === 'GenerateNucleiTemplate') {  
+      sendSelectedTextToNuclei(request.selectedText + '\n' + 'Also add the following reference to the nuclei template: ' + window.location.href);  
+    } else if (request.message === 'ToggleIframeVisibility') {  
+      toggleIframeVisibility();  
+    }  
+  });  
+  
           
       window.addEventListener('popstate', () => {    
       if (window.location.hostname === "hackerone.com") {    
