@@ -1,6 +1,6 @@
 # Nuclei AI - Browser Extension
 
-Nuclei AI Browser Extension, built on top of [cloud.projectdiscovery.io](https://cloud.projectdiscovery.io/templates), simplifies the creation of vulnerability templates, by enabling users to extract vulnerability information from any webpages to quickly and efficiently create nuclei templates, saving valuable time and effort.
+Nuclei AI Browser Extension, built on top of [ProjectDiscovery Cloud Platform](https://cloud.projectdiscovery.io/templates), simplifies the creation of vulnerability templates, by enabling users to extract vulnerability information from any webpages to quickly and efficiently create Nuclei templates, saving valuable time and effort.
 
 ## Prerequisite
 
@@ -19,7 +19,7 @@ A logged-in account on [cloud.projectdiscovery.io](https://cloud.projectdiscover
 
 To manually install the Nuclei AI Browser Extension, follow these steps:
 
-1. Download the [zipped extension file](https://github.com/projectdiscovery/nuclei-ai-extension/archive/refs/heads/main.zip) and unzip it.
+1. Download the [zipped extension file](https://github.com/projectdiscovery/Nuclei-ai-extension/archive/refs/heads/main.zip) and unzip it.
 2. Open your Chrome browser and navigate to `chrome://extensions`.
 3. Enable the `Developer mode` toggle located in the top right corner of the page.
 4. Click on `Load unpacked` and select the unzipped extension folder.
@@ -30,16 +30,16 @@ After following these steps, the Nuclei AI Browser Extension will be successfull
 
 ### Chrome Web Store
 
-Download and install the extension from the official extension store (coming-soon).
+Download and install the extension from the official extension store (coming soon).
 
 ## Usage
 
 ### Any Webpage:
 
-To generate nuclei templates from selected text on any website using the context menu:
+To generate Nuclei templates from selected text on any website using the context menu:
 
 1. **Select** the vulnerability information from any website, blog, or tweet.
-2. Right-click to open the context menu and select the **Generate nuclei template** option.
+2. Right-click to open the context menu and select the **Generate Nuclei template** option.
 3. If needed, make any changes to improve or update the prompt.
 4. Click on the **Generate** button.
 5. The AI will generate a Nuclei Template based on the selected text.
@@ -50,7 +50,7 @@ By following these steps, you can easily generate Nuclei Templates from any webp
 
 ### HackerOne Report:
 
-To generate nuclei templates on HackerOne platform:
+To generate Nuclei templates on HackerOne platform:
 
 1. Open a publicly disclosed or any HackerOne report that you have access to. 
 2. For example, open https://hackerone.com/reports/1960765
@@ -68,8 +68,8 @@ To generate nuclei templates on HackerOne platform:
 - Press **CLT+SHIFT+O** on any webpage to toggle (open / hide) the AI Editor window.
 
 ### Notes
-- All the templates generated with the extension will be automatically saved and stored in the user's projectdiscovery account.
-- Please note that this is an early version, and not all exploits can be converted into templates depending on the available vulnerability information and features provided by [Nuclei](http://github.com/projectdiscovery/nuclei).
+- All the templates generated with the extension will be automatically saved and stored in the user's ProjectDiscovery account.
+- Please note that this is an early version, and not all exploits can be converted into templates depending on the available vulnerability information and features provided by [Nuclei](http://github.com/projectdiscovery/Nuclei).
 
 ## Support
 
