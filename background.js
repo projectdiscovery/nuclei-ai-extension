@@ -6,20 +6,20 @@ chrome.runtime.onInstalled.addListener(() => {
     });    
   });    
       
-  chrome.contextMenus.onClicked.addListener((info, tab) => {    
-    if (info.menuItemId === 'sendSelectedText') {    
-      const selectedText = info.selectionText;    
-      chrome.tabs.sendMessage(tab.id, { message: 'GenerateNucleiTemplate', selectedText: selectedText });    
-    }    
+  chrome.contextMenus.onClicked.addListener((info, tab) => {
+    if (info.menuItemId === 'sendSelectedText') {
+      const selectedText = info.selectionText;
+      chrome.tabs.sendMessage(tab.id, { message: 'GenerateNucleiTemplate', selectedText: selectedText }).catch(() => {});
+    }
   });    
       
-  chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {    
-    if (changeInfo.status === 'complete') {    
-      chrome.tabs.sendMessage(tabId, { message: 'TabUpdated' });    
-    }    
+  chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status === 'complete' && tab.url && !tab.url.startsWith('chrome://')) {
+      chrome.tabs.sendMessage(tabId, { message: 'TabUpdated' }).catch(() => {});
+    }
   });    
   
   chrome.action.onClicked.addListener((tab) => {
-    chrome.tabs.sendMessage(tab.id, { message: 'ToggleIframeVisibility' });  
+    chrome.tabs.sendMessage(tab.id, { message: 'ToggleIframeVisibility' }).catch(() => {});
   });  
   
